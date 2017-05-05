@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <%= stylesheet_link_tag "bootstrap.min" %>
+    <%= stylesheet_link_tag "style" %>
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>工学部軽音部</title>
+</head>
+
+<body>
+ <%= form_tag("/login",method:'get') do %>
+     <div><%= text_field_tag :name %></div>
+     <div><%= text_field_tag :pass %></div>
+     <%= submit_tag %>
+     <% end %>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>
