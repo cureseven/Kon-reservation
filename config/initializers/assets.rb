@@ -15,3 +15,4 @@ Rails.application.config.assets.paths << Rails.root.join('node_modules')
 
 Rails.application.config.assets.precompile += %w( style.css)
 Rails.application.config.assets.precompile += %w( bootstrap.min.css)
+Rails.application.config.assets.precompile += %w( bootstrap.min.js)

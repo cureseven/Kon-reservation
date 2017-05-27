@@ -5,14 +5,14 @@ class UsersController < ApplicationController
         @user = nil
       render 'users/login'
     end
-    
+
     def login
       @pass = params[:pass]
       logger.debug(@pass)
       @name = params[:name]
       @user = User.find_by(name:@name)
       if @pass == @user.pass
-        render 'reserves/index'
+        redirect_to controller:'reserves',action:'index',name:@user.name
       else
         render 'users/login'
         end
@@ -42,15 +42,18 @@ class UsersController < ApplicationController
   def create
     @user = User.new(user_params)
 
-    respond_to do |format|
-      if @user.save
-        format.html { redirect_to @user, notice: 'User was successfully created.' }
-        format.json { render :show, status: :created, location: @user }
-      else
-        format.html { render :new }
-        format.json { render json: @user.errors, status: :unprocessable_entity }
-      end
-    end
+     @user.save
+      redirect_to controller:'users',action:'login',name:@user.name,pass:@user.pass
+
+#     respond_to do |format|
+#       if @user.save        redirect_to controller:'users',action:'login',name:@user.name,pass:@user.pass
+# #        format.html { redirect_to @user, notice: 'User was successfully created.' }
+# #        format.json { render :show, status: :created, location: @user }
+#       else
+#         format.html { render :new }
+#         format.json { render json: @user.errors, status: :unprocessable_entity }
+#       end
+#     end
   end
 
   # PATCH/PUT /users/1
@@ -88,4 +91,3 @@ class UsersController < ApplicationController
       params.require(:user).permit(:name, :pass, :admin)
     end
 end
-

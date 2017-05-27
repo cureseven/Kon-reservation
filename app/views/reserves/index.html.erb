@@ -2,190 +2,193 @@
 <html lang="ja">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <%= stylesheet_link_tag "bootstrap.min" %>
-    <%= stylesheet_link_tag "style" %>
-    <link rel="shortcut icon" href="favicon.ico">
-    <title>工学部軽音部</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <%= stylesheet_link_tag "bootstrap.min" %>
+  <%= stylesheet_link_tag "style" %>
+  <link rel="shortcut icon" href="favicon.ico">
+  <title>工学部軽音部</title>
 </head>
 
 <body>
-    <div class="jumbotron">
-        <nav class="navbar navbar-default navbar-fixed-top">
-            <div class="container-fluid">
-                <div class="navbar-header">
-                    <a class="navbar-brand" href="./index.html">
-       工学部軽音部部室予約
-			</a>
-      <div class="navbar-right">
-                <a href="/login_form">
-                <button type="button" class="btn btn-default navbar-btn pull-right">ログイン</button>
-                </a>
+  <div class="jumbotron">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid" id="nav-content">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="./index.html">
+            工学部軽音部部室予約
+          </a>
+          <div class="nav navbar-nav navbar-right">
+            <a href="/login_form">
+              <%= params[:name] %>
+              <button type="button" class="btn btn-default navbar-btn pull-right">ログイン</button>
+            </a>
+            <%= link_to '/users/new' do %>
             <button type="button" class="btn btn-default navbar-btn pull-right">登録</button>
-      </div>    
-                </div>
-            </div>
-        
-        </nav>
+            <% end %>
+          </div>
+        </div>
+      </div>
 
-        
-    </div>
-    <div class="container">
+    </nav>
+
+
+  </div>
+  <div class="container">
     <div class="calendar">
-    <div class="calendar-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    
+      <div class="calendar-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+
+      </div>
+      <div class="calendar-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="calender-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="calendar-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="calendar-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="calendar-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
+      <div class="calendar-width">
+        <h4>5.5</h4>
+        <table class="table">
+          <tr>
+            <td>10:00-</td>
+            <td>予約</td>
+          </tr>
+          <tr>
+            <td>12:00</td>
+            <td</td>
+          </tr>
+          <tr>
+            <td>14:00</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>16:00</td>
+            <td></td>
+          </tr>
+        </table>
+      </div>
     </div>
-<div class="calendar-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    </div>
-    <div class="calender-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    </div>
-    <div class="calendar-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    </div>
-    <div class="calendar-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    </div>
-    <div class="calendar-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    </div>
-    <div class="calendar-width">
-    <h4>5.5</h4>
-    <table class="table">
-    <tr>
-                    <td>10:00-</td>
-                    <td>予約</td>
-                </tr>
-                <tr>
-                    <td>12:00</td>
-                    <td</td>
-                </tr>
-                <tr>
-                    <td>14:00</td>
-                    <td></td>
-                </tr>
-                <tr>
-                    <td>16:00</td>
-                    <td></td>
-</tr>
-    </table>
-    </div>
-    </div>
-    </div>
+  </div>
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<%= javascript_include_tag "bootstrap.min.js" %>
 
 </html>
