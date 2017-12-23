@@ -5,6 +5,9 @@ class ReservesController < ApplicationController
   # GET /reserves.json
   def index
     @reserves = Reserve.all
+    @today = Date.today
+    this_day = Date.today
+    @this_monday = this_day - (this_day.wday - 1) # 今週の月曜日
   end
 
   # GET /reserves/1
