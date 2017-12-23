@@ -16,9 +16,9 @@
     <%= form.text_field :name, id: :reserf_name %>
   </div>
 
-  <div class="field">
-    <%= form.label :section %>
-    <%= form.number_field :section, id: :reserf_section %>
+  <div class="plan_id">
+    <%= form.label :plan_id %>
+    <%= form.number_field :plan_id, id: :reserf_plan_id ,in:1...7 %>
   </div>
 
   <div class="field">

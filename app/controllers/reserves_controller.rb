@@ -72,6 +72,6 @@ class ReservesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def reserf_params
-      params.require(:reserf).permit(:name, :section, :date)
+      params.require(:reserf).permit(:name, :plan_id, :date)
     end
 end
